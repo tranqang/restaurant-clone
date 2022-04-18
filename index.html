@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;800&display=swap" rel="stylesheet">   
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/icons/themify-icons/themify-icons.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-container-left">
+                <div class="header-container-logo">
+                    <img src="data:image/webp;base64,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" alt="">
+                </div>
+                <div class="header-container-menu">
+                    <ul>
+                        <li class="header-container-menu-item"><a href="#">Home</a></li>
+                        <li class="header-container-menu-item"><a href="#">Menu</a></li>
+                        <li class="header-container-menu-item"><a href="#">About</a></li>
+                        <li class="header-container-menu-item menu-item-blog">
+                            <a href="#">Blog</a>
+                            <div class="subnav-blog">
+                                <ul>
+                                    <li class="subnav-blog-item"><a href="#">Blog</a></li>
+                                    <li class="subnav-blog-item"><a href="#">Blog Details</a></li>
+                                    <li class="subnav-blog-item"><a href="#">Element</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-container-menu-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="header-container-right">
+                <ul>
+                    <li class="header-container-right-item item-book"><a href="#">Book a Table</a></li>
+                    <li class="header-container-right-item item-phone"><a href="#">+10 (78) 783 3674</a></li>
+                </ul>
+            </div>
+            <div class="tab-menu">
+                <label for="tab-menu-input">
+                    <i class="ti-menu"></i>
+                </label>
+                <input type="checkbox" id="tab-menu-input" hidden>
+                <ul class="tab-menu-list">
+                    <li class="tab-menu-item"><a href="#">Home</a></li>
+                    <li class="tab-menu-item"><a href="#">Menu</a></li>
+                    <li class="tab-menu-item"><a href="#">About</a></li>
+                    <li class="tab-menu-item"><a href="#" class="blog-item" style="padding: 0;">
+                        <label for="blog-item-input" style="padding: 12px;">Blog +</label>
+                        </a></li>
+                    <input type="checkbox" id="blog-item-input" hidden>
+                    <ul class="blog-item-subnav">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Blog Detail</a> </li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
+                    <li class="tab-menu-item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <slider>
+        <div class="container">
+            <div class="slider-content">
+                <div class="slider-left">
+                    <h1>Meet, Eat & Enjoy the true test</h1>
+                    <p>Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                    <div class="slider-left-btn">
+                        <div class="slider-left-btn-menu"><a href="#">Our Menu</a></div>
+                        <div class="slider-left-btn-watch"><a href="#">
+                            <img src="https://preview.colorlib.com/theme/restauco/assets/img/icon/play-button.svg" alt="">
+                            
+                            <p>Watch Video</p>
+                        </a></div>
+                    </div>
+                </div>
+                <div class="slider-right">
+                    <img src="https://preview.colorlib.com/theme/restauco/assets/img/hero/xh1_hero1.jpg.pagespeed.ic.fuDZbbOsws.webp" alt="">
+                </div>
+            </div>
+            
+        </div>
+        
+    </slider>
+
+    <banner class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-content-text">
+                    <h1>Best way to eat healthy food</h1>
+                    <p>Making a reservation at Délicious restaurant is easy and takes just a
+                        couple of minutes.</p>      
+                </div>
+                <div class="banner-content-list">
+                    <div class="col-third">
+                        <div class="banner-content-item">
+                            <div class="banner-content-item-icon">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/icon/services1.svg" alt="">
+                            </div>
+                            <h3>Healthy Meal</h3>
+                            <p>Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                        </div>
+                    </div>
+                    <div class="col-third">
+                        <div class="banner-content-item">
+                            <div class="banner-content-item-icon">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/icon/services2.svg" alt="">
+                            </div>
+                            <h3>Fast Food</h3>
+                            <p>Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                        </div>
+                    </div>
+                    <div class="col-third">
+                        <div class="banner-content-item">
+                            <div class="banner-content-item-icon">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/icon/services3.svg" alt="">
+                            </div>
+                            <h3>Delicious Coffe</h3>
+                            <p>Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </banner>
+    <popular class="popular">
+        <div class="container">
+            <div class="popular-content">
+                <div class="popular-content-header">
+                    <div class="popular-content-header-left">
+                        <h1>Most Popular Dishes</h1>
+                        <p>Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                    </div>
+                    <div class="popular-content-header-right">
+                        <a href="#">Full Menu</a>
+                    </div>
+                </div>
+                <div class="popular-content-category">
+                    <ul class="popular-content-category-list">
+                        <li class="popular-content-category-item"><a href="#">Breakfast</a></li>
+                        <li class="popular-content-category-item"><a href="#">Lunch</a></li>
+                        <li class="popular-content-category-item"><a href="#">Dinner</a></li>
+                        <li class="popular-content-category-item"><a href="#">Drinks</a></li>
+                        <li class="popular-content-category-item"><a href="#">Fastfood</a></li>
+                    </ul>
+                </div>
+                <div class="popular-content-list">
+                    <div class="col-third">
+                        <div class="popular-content-item">
+                            <div class="popular-content-item-img">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xpro-items3.jpg.pagespeed.ic.zgsc8l8zhI.webp" alt="">
+                                <div class="popular-content-item-price">$20</div>
+                            </div>
+                            <h3 class="popular-content-item-name">Hamburger</h3>
+                            <p class="popular-content-item-desc">Making a reservation at Délicious restaurant is easy and</p>
+                            <div class="popular-content-item-btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-third">
+                        <div class="popular-content-item">
+                            <div class="popular-content-item-img">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xpro-items2.jpg.pagespeed.ic.InCMm5RIdj.webp" alt="">
+                                <div class="popular-content-item-price">$20</div>
+                            </div>
+                            <h3 class="popular-content-item-name">Sandwich</h3>
+                            <p class="popular-content-item-desc">Making a reservation at Délicious restaurant is easy and</p>
+                            <div class="popular-content-item-btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-third">
+                        <div class="popular-content-item">
+                            <div class="popular-content-item-img">
+                                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xpro-items2.jpg.pagespeed.ic.InCMm5RIdj.webp" alt="">
+                                <div class="popular-content-item-price">$20</div>
+                            </div>
+                            <h3 class="popular-content-item-name">Tuna Steak</h3>
+                            <p class="popular-content-item-desc">Making a reservation at Délicious restaurant is easy and</p>
+                            <div class="popular-content-item-btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </popular>
+    <book class="book">
+        <div class="container">
+            <div class="book-content">
+                <div class="book-content-left">
+                    <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xwoner.jpg.pagespeed.ic.ncgYYcijBP.webp" alt="">
+                </div>
+                <div class="book-content-right">
+                    <h1 class="book-content-right-header">Book a table</h1>
+                    <p class="book-content-right-desc">Making a reservation at Délicious restaurant is easy and takes just a couple of minutes.</p>
+                    <div class="book-content-right-input">
+                        <div class="book-content-right-input-number">
+                            <input type="text" placeholder="Number Of Guest">
+                        </div>
+                        <div class="book-content-right-input-day">
+                            <input type="date" placeholder="Date">
+                        </div>
+                        <div class="book-content-right-input-meal">
+                            <input type="text" list="meal-list" placeholder="Time">
+                                        
+                        <datalist id="meal-list">
+                            <option value="Breakfast">
+                            <option value="Lunch">
+                            <option value="Dinner">
+                        
+                          </datalist>
+                        </div>
+                        <div class="book-content-right-input-phone">
+                            <input type="text" placeholder="Phone No.">
+                        </div>
+                        <div class="book-content-right-input-message">
+                            <input type="text" placeholder="Message">
+                        </div>
+                        
+                    </div>
+                    <div class="book-send-request">
+                        <a href="#">Send Request</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </book>
+    <comment>
+        <div class="container">
+            <div class="comment-content">
+                <div class="col-third">
+                    <div class="comment-content-item">
+                        <div class="comment-content-item-img">
+                            <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xcustomer1.jpg.pagespeed.ic.p3OG0X1EAS.webp" alt="">
+                        </div>
+                        <p class="comment-content-item-text">"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes midst tree form seas.</p>
+                        <div class="comment-content-item-vote">
+                            <div class="comment-content-item-vote-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <p class="comment-content-item-vote-name"> - Robert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-third">
+                    <div class="comment-content-item">
+                        <div class="comment-content-item-img">
+                            <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xcustomer2.jpg.pagespeed.ic.JrtHIY54A1.webp" alt="">
+                        </div>
+                        <p class="comment-content-item-text">"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes midst tree form seas.</p>
+                        <div class="comment-content-item-vote">
+                            <div class="comment-content-item-vote-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <p class="comment-content-item-vote-name"> - Robert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-third">
+                    <div class="comment-content-item">
+                        <div class="comment-content-item-img">
+                            <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xcustomer3.jpg.pagespeed.ic.SbxzcMV5-B.webp" alt="">
+                        </div>
+                        <p class="comment-content-item-text">"Making a reservation at Délicious restaurant is easy and takes just a couple of minutes midst tree form seas.</p>
+                        <div class="comment-content-item-vote">
+                            <div class="comment-content-item-vote-star">
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                                <i class="ti-star"></i>
+                            </div>
+                            <p class="comment-content-item-vote-name"> - Robert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </comment>
+    <location>
+        <div class="location-content">
+            <div class="location-item">
+                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xinstra3.jpg.pagespeed.ic.zEBAIp_Rmx.webp" alt="">
+            </div>
+            <div class="location-item">
+                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xinstra4.jpg.pagespeed.ic.eO3g5zu8U0.webp" alt="">
+            </div>
+            <div class="location-item">
+                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xinstra2.jpg.pagespeed.ic.RJ4yYFnogQ.webp" alt="">
+            </div>
+            <div class="location-item">
+                <img src="https://preview.colorlib.com/theme/restauco/assets/img/gallery/xinstra1.jpg.pagespeed.ic.virRQfsSPW.webp" alt="">
+            </div>
+            <div class="location-link">
+                <a href="#">
+                    <i class="ti-instagram"></i>
+                    <p style="display: inline-block; padding: 0 6px;line-height: 1rem;">@restauco</p>
+                </a>
+            </div>
+        </div>
+        
+        
+        
+    </location>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <img src="https://preview.colorlib.com/theme/restauco/assets/img/logo/xlogo2_footer.png.pagespeed.ic.5F1Tc0XS45.webp" alt="">
+                        <p>Land behold it created good saw after she'd Our set living. Signs midst dominion creepeth morning laboris nisi ufsit aliquip.</p>
+                        <div class="footer-content-item-icon">
+                            <ul>
+                                <li><a href="#" class="ti-twitter"></a></li>
+                                <li><a href="#" class="ti-facebook"></a></li>
+                                <li><a href="#" class="ti-linkedin"></a></li>
+                                <li><a href="#" class="ti-pinterest"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h3>Cakes</h3>
+                        <ul>
+                            <li><a href="#">Blackforest</a></li>
+                            <li><a href="#">Bodhubon</a></li>
+                            <li><a href="#">Rongdhonu</a></li>
+                            <li><a href="#">Meghrong</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-fourth">
+                    <div class="footer-content-item">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li>76/A, Green Lane, Dhanmondi, NYC</li>
+                            <li><a href="#">+10 (78) 738-9083</a></li>
+                            <li><a href="#">restaurco89@gmail.com</a></li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <p style="text-align: center; padding: 40px;">Copyright ©2021 All rights reserved | This template is made with <i class="ti-heart"></i> by Thieu</p>
+        </div>
+    </footer>
+</body>
+</html>

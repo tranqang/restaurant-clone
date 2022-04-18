@@ -1,0 +1,111 @@
+@media (max-width:739px){
+    .header-container-right{
+        display: none;
+    }
+    .popular-content-category-item>a{
+        display: block;
+    }
+    .popular-content-category-item>a::after{
+        display: none;
+    }
+    .popular-content-header-left{
+        width: 100%;
+    }
+    .popular-content-header-right{
+        width: 100%;
+    }
+    .popular-content-header-right >a {
+        margin-right: 50%;
+        transform: translateX(50%)
+    }
+
+}
+@media (min-width:740px)and(max-width:1023px){
+
+}
+@media (max-width:1023px){
+    
+    .slider-left{
+        width: 100%;
+        padding:100px 0;
+    }
+    .slider-right{
+        width: 100%;
+    }
+    .col-third{
+        width: 100%;
+    }
+    .book-content-left{
+        width: 100%;
+    }
+    .book-content-right{
+        width: 100%;
+    }
+    .col-fourth{
+        width: 50%;
+    }
+    .book-content-right-input div{
+        width: 100%;
+    }
+    
+    
+
+
+    .header-container-menu{
+        display: none;
+    }
+
+    .tab-menu{
+        display: block;
+    }
+
+    .tab-menu>label{
+        font-size: 2rem;
+        display: block;
+        padding: 12px;
+        width: 100%;
+    }
+    #tab-menu-input:checked ~ .tab-menu-list{
+        display: block;
+    }
+    .tab-menu-list{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #4c4c4c;
+        display: none;
+
+    }
+
+    .tab-menu-item{
+
+    }
+    .tab-menu-item label{
+        width: 100%;
+        display: block;
+    }
+    .tab-menu a{
+        color: #fff;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        padding: 12px;
+    }
+    .tab-menu a:hover{
+        background-color: #ccc;
+        color: var(--text-color-dark);
+    }
+    .blog-item{
+        padding: 0;
+    }
+    #blog-item-input ~ ul{
+        display: none;
+    }
+    #blog-item-input:checked ~ ul{
+        display: block;
+    }
+    .blog-item-subnav a{
+        padding-left: 30px;
+    }
+}
